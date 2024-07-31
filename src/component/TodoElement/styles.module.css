@@ -1,9 +1,9 @@
 .Todo{
     background-color: black;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     border-radius: 20px;
-    padding: 8px;
+    padding: 13px 8px;
     box-shadow: inset 2px 2px 15px rgba(159, 158, 158,.5),
     7px 7px 20px rgb(50, 50, 50); 
     margin-bottom: 8px;
@@ -11,22 +11,45 @@
     flex-direction: row;
     align-items: center;
 }
-.text {
+
+
+.info{
     width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2.5px solid rgb(61, 61, 61);
+}
+.date > p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.text{
+    width: 100%;
     height: fit-content;
     overflow-wrap: break-word; 
     word-break: break-word; 
     color: white;
     font-size: 20px;
 }
+
 .text > p{
-    margin: 15px 0;
-    margin-left: 5px;
-    margin-right: 0;
+    margin-left: 6px;
 }
+
+
 .buttonBox{
     width: 20%;
-    height: 90%;
+    height: 100%;
     border-left: 2.5px solid rgb(61, 61, 61);
     display: flex;
     justify-content: center;

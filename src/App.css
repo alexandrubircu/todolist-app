@@ -10,20 +10,19 @@
   background-color: #1c1c1c;
   width: 400px;
   height: 700px;
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  box-shadow: 15px 15px 35px rgba(28, 28, 28,1.5);
 }
 .label{
-  width: 100%;
+  width: 90%;
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: white;
   border-bottom: 2.5px solid rgb(61, 61, 61);
 }
@@ -39,9 +38,10 @@
   flex-direction: column;
   align-items: center;
   padding:  8px 0;
+  overflow: scroll;
 }
 .createTodo{
-  width: 100%;
+  width: 90%;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -50,12 +50,12 @@
   border-top: 2.5px solid rgb(61, 61, 61);
 }
 
-.createTodo > textarea{
+.createTodo > textarea {
   background-color: black;
-  width: 250px;
-  height: 60px;
+  height: 70px;
+  overflow-y: auto; /* Adaugă un scrollbar vertical dacă textul depășește înălțimea maximă */
   margin-right: 20px;
-  resize: none;
+  resize: none; 
   outline: none;
   border: none;
   font-size: 20px;
@@ -63,10 +63,10 @@
   padding: 15px;
   border-radius: 20px;
   color: white;
-
-  box-shadow: inset 3px 3px 15px rgba(159, 158, 158,.5),
-  7px 7px 20px rgb(50, 50, 50); 
+  box-shadow: inset 3px 3px 15px rgba(159, 158, 158, .5),
+              7px 7px 20px rgb(50, 50, 50);
 }
+
 
 .sendButtonBox{
   /* background-color: aqua; */
